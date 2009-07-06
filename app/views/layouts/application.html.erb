@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <%= javascript_include_tag :all, :cache => true %>
+    <%= stylesheet_link_tag :all, :cache => true %>
+	<title>GMWebAgency</title>
+	
+</head>
+
+<body>
+    
+    <div id="doc4" class="yui-t6">
+        <div id="hd">
+            <div id="hd_img">
+                <%= image_tag("banniere_complete_02.jpg") %>
+            </div>
+            <div id="menu">
+                <ul>
+                    <li><%= link_to "Accueil", "/" %></li>
+                    <li><%= link_to "Services", "" %></li>
+                    <li><%= link_to "Société", "" %></li>
+                    <li><%= link_to "Portfolio", "" %></li>
+                    <li><%= link_to "Contacts", "" %></li>
+                </ul>
+            </div>
+        </div>
+        <div id="bd">
+            <%= yield %>
+        </div>
+        <div id="ft">
+
+        </div>
+    </div>
+
+
+</body>
+</html>
