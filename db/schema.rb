@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090706132826) do
+ActiveRecord::Schema.define(:version => 20090706202419) do
 
   create_table "projets", :force => true do |t|
     t.string   "nom"
@@ -23,6 +23,7 @@ ActiveRecord::Schema.define(:version => 20090706132826) do
     t.integer  "illus_file_size"
     t.string   "illus_content_type"
     t.datetime "illus_updated_at"
+    t.boolean  "marked_for_mp",      :default => false
   end
 
   create_table "users", :force => true do |t|

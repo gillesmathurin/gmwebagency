@@ -1,10 +1,11 @@
 class HomeController < ApplicationController
   # GET 'home/accueil'
   def accueil
+    @projets = Projet.marked_for_mp
   end
   
   # GET '/services'
-  def service
+  def services
   end
   
   # GET '/societe'

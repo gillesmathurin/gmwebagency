@@ -1,5 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
   map.resources :projets
+  map.services '/services', :controller => "home", :action => "services"
 
   map.logout '/logout', :controller => 'sessions', :action => 'destroy'
 

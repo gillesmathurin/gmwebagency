@@ -1,5 +1,9 @@
 body {
-	color: #6e6e6e;
+	color: #494949;
+	height: 100%;
+}
+
+html {
 	background-color: #cde8fb;
 }
 
@@ -49,7 +53,7 @@ div #hd {
 
 div #bd {
 	background-color: #f9fbfb;
-	border: 1px solid silver;
+	border: 1px solid #e4e4e4;
 	padding: 20px;
 }
 
@@ -60,7 +64,7 @@ div #bd {
 	background: url(../images/bkaccroche-accueil.png) no-repeat center center;
 	font-weight: bold;
 	margin-top: 15px;
-	margin-bottom: 15px;
+	margin-bottom: 10px;
 }
 
 #bd div.accroche div#boule-orange {
@@ -97,6 +101,14 @@ div #bd {
 	margin-left: 5px;
 }
 
+#bd #yui-main .yui-g.btexte p a {
+	color: #618490;
+}
+
+#bd #yui-main .yui-g.btexte p a:hover {
+	color: #df6900;
+}
+
 #bd h2 {
 	width: 620px;
 	height: 26px;
@@ -109,13 +121,59 @@ div #bd {
 	margin-bottom: 10px;
 }
 
-div #ft {
-	height: 73px;
-	display: block;
-	background-color: #0062bb;
-	bottom: 0;
+#bd h1 {
+	color: #1d8cdd;
+	font: bold 153.9% Georgia, "Times New Roman", Times, serif;
 }
 
-div .yui-b .sidebar {
-	background-color: aqua;
+#ft {
+	height: 33px;
+	display: block;
+	background-color: #007eee;
+	bottom: 0;
+	text-align: center;
+	color: white;
+	line-height: 33px;
+}
+
+#bd div.yui-g.b1c2 {
+	background-image: url(../images/b1c2.gif);
+	margin-top: 15px;
+	width: 230px;
+	height: 115px;
+}
+
+#bd div.yui-b.sidebar div.yui-g.b1c2 div#boule-verte {
+	display: block;
+	position: relative;
+	top: -15px;
+	margin-left: 8px;
+}
+
+#bd div.yui-b.sidebar div.yui-g.b1c2 p {
+	text-align: center;
+}
+
+div.yui-g.b1c2 a {
+	color: #bd4a44;
+	font-variant: small-caps;
+	font-size: 1.9em;
+}
+
+#bd div.yui-g.b2c2 {
+	background: url(../images/b2c2.gif) no-repeat;
+	width: 230px;
+	height: 350px;
+	margin-top: 20px;
+}
+
+#bd div.yui-b.sidebar div.yui-g.b2c2 div#boule-bleu {
+	display: block;
+	position: relative;
+	top: -15px;
+	margin-left: 8px;
+}
+
+#bd div.yui-b.sidebar div.yui-g.b2c2 p {
+	text-align: center;
 }
