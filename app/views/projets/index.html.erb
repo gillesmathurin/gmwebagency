@@ -1,0 +1,28 @@
+<h1>Listing projets</h1>
+
+<table>
+  <tr>
+    <th>Nom</th>
+    <th>Weburl</th>
+    <th>Desc</th>
+    <th>Mise service</th>
+    <th>Category</th>
+  </tr>
+
+<% @projets.each do |projet| %>
+  <tr>
+    <td><%=h projet.nom %></td>
+    <td><%=h projet.weburl %></td>
+    <td><%=h projet.desc %></td>
+    <td><%=h projet.mise_service %></td>
+    <td><%=h projet.category %></td>
+    <td><%= link_to 'Show', projet %></td>
+    <td><%= link_to 'Edit', edit_projet_path(projet) %></td>
+    <td><%= link_to 'Destroy', projet, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New projet', new_projet_path %>

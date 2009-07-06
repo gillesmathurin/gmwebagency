@@ -1,0 +1,28 @@
+<p>
+  <b>Nom:</b>
+  <%=h @projet.nom %>
+</p>
+
+<p>
+  <b>Weburl:</b>
+  <%=h @projet.weburl %>
+</p>
+
+<p>
+  <b>Desc:</b>
+  <%=h @projet.desc %>
+</p>
+
+<p>
+  <b>Mise service:</b>
+  <%=h @projet.mise_service %>
+</p>
+
+<p>
+  <b>Category:</b>
+  <%=h @projet.category %>
+</p>
+
+
+<%= link_to 'Edit', edit_projet_path(@projet) %> |
+<%= link_to 'Back', projets_path %>

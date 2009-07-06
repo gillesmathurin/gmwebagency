@@ -1,0 +1,47 @@
+body {
+	color: #6e6e6e;
+	background-color: #f9fbfb;
+}
+
+/* @group Header */
+
+div #hd {
+	width: 974px;
+	height: 161px;
+}
+
+#hd #menu ul {
+	display: block;
+	position: absolute;
+	margin-left: 160px;
+	top: 123px;
+}
+
+#hd #menu ul li  {
+	display: inline;
+	line-height: 35px;
+}
+
+#hd #menu ul li a {
+	font-weight: bold;
+	background: url(../images/bk_menuoff.gif) no-repeat center center;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	height: 36px;
+	width: 84px;
+	color: navy;
+}
+
+#hd #menu ul li a:hover {
+	background: url(../images/bk_menuon.gif) no-repeat center center;
+	color: white;
+}
+
+
+
+/* @end */
+
+div #ft {
+	
+}
