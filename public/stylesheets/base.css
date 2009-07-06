@@ -1,6 +1,6 @@
 body {
 	color: #6e6e6e;
-	background-color: #f9fbfb;
+	background-color: #cde8fb;
 }
 
 /* @group Header */
@@ -19,7 +19,7 @@ div #hd {
 
 #hd #menu ul li  {
 	display: inline;
-	line-height: 35px;
+	line-height: 38px;
 }
 
 #hd #menu ul li a {
@@ -33,6 +33,11 @@ div #hd {
 	color: navy;
 }
 
+#hd #menu ul li a:visited {
+		background: url(../images/bk_menuon.gif) no-repeat center center;
+	color: white;
+}
+
 #hd #menu ul li a:hover {
 	background: url(../images/bk_menuon.gif) no-repeat center center;
 	color: white;
@@ -42,6 +47,75 @@ div #hd {
 
 /* @end */
 
+div #bd {
+	background-color: #f9fbfb;
+	border: 1px solid silver;
+	padding: 20px;
+}
+
+#bd div.accroche {
+	display: block;
+	width: 620px;
+	height: 67px;
+	background: url(../images/bkaccroche-accueil.png) no-repeat center center;
+	font-weight: bold;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+#bd div.accroche div#boule-orange {
+	float: left;
+	top: -25px;
+	display: block;
+	position: relative;
+	margin-left: 10px;
+}
+
+#bd div.accroche p {
+	margin-right: 10px;
+	padding-top: 10px;
+	padding-left: 70px;
+	color: black;
+}
+
+#bd div.yui-g #boule-rouge {
+	display: block;
+	position: relative;
+	top: 20px;
+	margin-left: 10px;
+}
+
+#bd div.yui-g #boule-grise {
+	display: block;
+	position: relative;
+	top: 20px;
+	margin-left: 10px;	
+}
+
+#bd #yui-main .yui-g.btexte p {
+	width: 620px;
+	margin-left: 5px;
+}
+
+#bd h2 {
+	width: 620px;
+	height: 26px;
+	display: block;
+	background: url(../images/bk-titreparagraphe.png) no-repeat;
+	font-weight: bold;
+	padding-left: 50px;
+	padding-top: 5px;
+	color: black;
+	margin-bottom: 10px;
+}
+
 div #ft {
-	
+	height: 73px;
+	display: block;
+	background-color: #0062bb;
+	bottom: 0;
+}
+
+div .yui-b .sidebar {
+	background-color: aqua;
 }

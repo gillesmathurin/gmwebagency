@@ -4,15 +4,15 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<%= stylesheet_link_tag 'reset-fonts-grids', 'base', :cache => true %>
     <%= javascript_include_tag :all, :cache => true %>
-    <%= stylesheet_link_tag :all, :cache => true %>
 	<title>GMWebAgency</title>
 	
 </head>
 
 <body>
     
-    <div id="doc4" class="yui-t6">
+    <div id="doc4" class="yui-t5">
         <div id="hd">
             <div id="hd_img">
                 <%= image_tag("banniere_complete_02.jpg") %>
@@ -27,14 +27,15 @@
                 </ul>
             </div>
         </div>
+        
         <div id="bd">
             <%= yield %>
         </div>
+        
         <div id="ft">
-
+            GMWebAgency ©2007-<%= Date.today.year %> - Tous droits réservés - Conception : GMWebagency
         </div>
     </div>
-
-
+    
 </body>
 </html>

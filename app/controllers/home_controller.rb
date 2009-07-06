@@ -5,17 +5,14 @@ class HomeController < ApplicationController
   
   # GET '/services'
   def service
-    
   end
   
   # GET '/societe'
   def societe
-    
   end
   
   # GET '/contacts'
   def contact
-    
   end
 
 end
