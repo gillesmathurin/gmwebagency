@@ -19,6 +19,10 @@
                 <%= link_to "Consulter le portfolio", projets_path() %>
             </p>
             
+            <p>
+                Une idée de service en ligne à proposer ? Nous vous aiderons à la concrétiser
+            </p>
+            
             <h2>Maintenance, Mise à jour de site et Refonte</h2>
             
             <p>
@@ -67,10 +71,17 @@
             <%= image_tag("boule-bleu.png", :size => "31x30") %>
         </div>
         <p><b>Un cas de Système d'Information</b></p>
-        <p><b>CYBERBUS (C.R.I.J)</b></p>
+        
+        <p>
+            <b>
+                 <%= link_to "CYBERBUS (C.R.I.J)", "http://www.crijcyberbus.com",
+                  :popup => true %>
+            </b>
+        </p>
+        
         <p>
             Pour optimiser la circulation de l'information liée aux activités Cyberbus du C.R.I.J , la saisie et le traitement des fiches d'activités des Cyberbus furent dématérialisés sur une architecture Client-Serveur. Le temps de traitement des informations recueillies tout comme leur diffusion furent réduit de façon considérable ; aboutissant à une meilleure vision d'ensemble de l'activité.
         </p>
-        <p><%= link_to "Détails", "" %></p>
+        <p><%= link_to "Détails", si_cyberbus_path() %></p>
     </div>
 </div>
