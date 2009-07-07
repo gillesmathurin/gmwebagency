@@ -37,11 +37,6 @@ div #hd {
 	color: navy;
 }
 
-#hd #menu ul li a:visited {
-		background: url(../images/bk_menuon.gif) no-repeat center center;
-	color: white;
-}
-
 #hd #menu ul li a:hover {
 	background: url(../images/bk_menuon.gif) no-repeat center center;
 	color: white;
@@ -99,6 +94,7 @@ div #bd {
 #bd #yui-main .yui-g.btexte p {
 	width: 620px;
 	margin-left: 5px;
+	margin-bottom: 10px;
 }
 
 #bd #yui-main .yui-g.btexte p a {
@@ -124,6 +120,7 @@ div #bd {
 #bd h1 {
 	color: #1d8cdd;
 	font: bold 153.9% Georgia, "Times New Roman", Times, serif;
+	margin-bottom: 10px;
 }
 
 #ft {
