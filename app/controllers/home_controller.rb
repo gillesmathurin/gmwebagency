@@ -15,5 +15,8 @@ class HomeController < ApplicationController
   # GET '/contacts'
   def contact
   end
-
+  
+  # GET '/si_cyberbu'
+  def cyberbus    
+  end
 end

@@ -120,7 +120,8 @@ div #bd {
 #bd h1 {
 	color: #1d8cdd;
 	font: bold 153.9% Georgia, "Times New Roman", Times, serif;
-	margin-bottom: 10px;
+	margin-bottom: 15px;
+	margin-top: 15px;
 }
 
 #ft {
@@ -173,4 +174,7 @@ div.yui-g.b1c2 a {
 
 #bd div.yui-b.sidebar div.yui-g.b2c2 p {
 	text-align: center;
+	margin-bottom: 10px;
+	padding-left: 5px;
+	padding-right: 5px;
 }
