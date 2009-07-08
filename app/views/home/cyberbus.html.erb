@@ -5,7 +5,7 @@
     <div class="yui-g">
         <div class="yui-u first">
             <p align="center">
-                <%= image_tag(@projet.illus.url(:medium)) %>
+                <%= image_tag(@projet.illus.url(:medium)) if @projet %>
             </p>
             <table border="0">
                 <tr>
