@@ -17,6 +17,10 @@ class HomeController < ApplicationController
   end
   
   # GET '/si_cyberbu'
-  def cyberbus    
+  def cyberbus
+    @projet = Projet.find_by_nom("cyberbus")
+    respond_to do |format|
+      format.html {  }
+    end    
   end
 end

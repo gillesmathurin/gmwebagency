@@ -1,5 +1,30 @@
 <div id="yui-main">
     <div class="yui-g">
-        <%= image_tag("SICyberbus.png") %>
+        <h1>Etude de cas : Système d'information des Cyberbus du C.R.I.J</h1>
+    </div>
+    <div class="yui-g">
+        <div class="yui-u first">
+            <p align="center">
+                <%= image_tag(@projet.illus.url(:medium)) %>
+            </p>
+            <table border="0">
+                <tr>
+                    <th>Lien :</th>
+                    <td><%= link_to "Site Cyberbus", @projet.weburl, :popup => true %></td>
+                </tr>
+                <tr>
+                    <th>Mise en service :</th>
+                    <td><%= @projet.mise_service.strftime("%d/%m/%Y") %></td>
+                </tr>
+                <tr>
+                    <th>Objectifs :</th>
+                    <td><%= @projet.desc %></td>
+                </tr>
+            </table>
+            
+        </div>
+        <div class="yui-u">
+            <%= image_tag("SICyberbus.png", :size => "450x597") %>
+        </div>
     </div>
 </div>
