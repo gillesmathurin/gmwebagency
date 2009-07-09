@@ -4,7 +4,7 @@ class ProjetsController < ApplicationController
   # GET /projets
   # GET /projets.xml
   def index
-    @projets = Projet.all
+    @projets = Projet.all.group_by(&:category)
 
     respond_to do |format|
       format.html # index.html.erb
