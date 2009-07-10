@@ -23,4 +23,12 @@ class HomeController < ApplicationController
       format.html {  }
     end    
   end
+  
+  def contact
+    @prospect = Prospect.new
+    
+    respond_to do |format|
+      format.html {  }
+    end
+  end
 end

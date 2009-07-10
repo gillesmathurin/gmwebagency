@@ -1,0 +1,57 @@
+<div id="yui-main">
+    <div class="yui-b">
+        <div class="yui-g">
+            <h1>Contactez nous</h1>
+        </div>
+        
+        <div class="yui-g">
+            <p>
+                Vous pouvez nous contacter : <br/>
+                    - par telephone au : 0690 91 17 48 <br/>
+                    - par email au : <%= mailto %>
+            </p>
+        </div>
+        
+        <div class="yui-g">
+            <% form_for @prospect do |f| -%>
+              <p>
+                <%= f.label :nom, "Nom" %><br/>
+                <%= f.text_field :nom %>
+              </p>
+              <p>
+                <%= f.label :prenom, "Prenom" %><br/>
+                <%= f.text_field :prenom %>
+              </p>
+              <p>
+                <%= f.label :tel, "Telephone" %><br/>
+                <%= f.text_field :tel %>
+              </p>
+              <p>
+                <%= f.label :fax, "Fax" %><br/>
+                <%= f.text_field :fax %>
+              </p>
+              <p>
+                <%= f.label :mobile, "Tel Mobile" %><br/>
+                <%= f.text_field :mobile %>
+              </p>
+              <p>
+                <%= f.label :email, "Email" %><br/>
+                <%= f.text_field :email %>
+              </p>
+              <p>
+                <%= f.label :Message, "Message" %><br/>
+                <%= f.text_area :message %>
+              </p>
+              <p>
+                <%= submit_tag "Envoyer" %>
+              </p>
+            <% end -%>
+        </div>
+    </div>
+</div>
+
+<div class="yui-b sidebar">
+    <div class="yui-g">
+        
+    </div>
+</div>

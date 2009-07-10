@@ -1,8 +1,10 @@
 ActionController::Routing::Routes.draw do |map|
   map.resources :projets
+  map.resources :prospects
   map.services '/services', :controller => "home", :action => "services"
   map.si_cyberbus '/si_cyberbus', :controller => "home", :action => "cyberbus"
   map.portfolio '/portfolio', :controller => "projets", :action => "index"
+  map.contact '/contacts', :controller => "home", :action => "contact"
 
   map.logout '/logout', :controller => 'sessions', :action => 'destroy'
 
