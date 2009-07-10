@@ -193,9 +193,35 @@ div.yui-g.b1c2 a {
 	color: navy;
 }
 
+#bd div.yui-g div.categorie table.portfolio {
+	border-style: none;
+}
+
+#bd div.yui-g div.categorie table.portfolio tr {
+	border-style: none;
+}
+
+#bd div.yui-g div.categorie table.portfolio td {
+	border-style: none;
+}
+
 #bd form p {
 	margin-top: 5px;
 	margin-bottom: 5px;
+}
+
+div.yui-b.sidebar div.yui-g.login {
+	margin-top: 15px;
+	text-align: center;
+	background-color: purple;
+	padding: 5px;
+	width: 95%;
+}
+
+div.yui-b.sidebar div.yui-g.login a {
+	color: white;
+	font-weight: bold;
+	display: block;
 }
 
 /* @end */

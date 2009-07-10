@@ -3,45 +3,50 @@
         <div class="yui-g">
             <h1>Portfolio</h1>
         </div>
-        
+
         <div class="yui-g">
             <% @projets.each do |category, projets| %>
-                <div id="">
-                    
-                </div>
-                <h2><%= cat_for_display(category) %></h2>
-                
-                
+                <div class="categorie">
+                    <h2><%= cat_for_display(category) %></h2>
+                    <table class="portfolio">
+                            <% projets.in_groups_of(3, false) do |projet| %>
+                            <tr>
+                                <% projet.each do |p| %>
+                                <td align="center">
+                                    <%= image_tag(p.illus.url(:portfolio)) %><br/><br/>
+                                    <span class="titre"><%= link_to p.nom, p.weburl %></span><br/>
+                                    <% if logged_in? %>
+                                        <%= link_to "Supprimer", projet_path(p), :method => "delete", :confirm => "Certain ?" %>
+                                    <% end %>
+                                </td>
+                                <% end %>
+                            </tr>                            
+                            <% end %>
+                        
+                    </table>
+                </div>    
             <% end %>
         </div>
+        <% if logged_in? %>
+            <%= link_to "Ajouter un projet", new_projet_path() %>
+        <% end %>
     </div>
 </div>
 
+<div class="yui-b sidebar">
+    <div class="yui-g b1c2">
+        <div id="boule-verte">
+            <%= image_tag("boule-verte.png", :size => "31x30") %>
+        </div>
+        <p>
+            <%= link_to "Voir nos Sites Modeles", "" %>
+        </p>
+    </div>
+    
+    <div class="yui-g login">
+        <% if logged_in? %>
+            <%= link_to "Déconnexion", logout_path() %>
+        <% end %>
+    </div>
+</div>
 
-
-<table>
-  <tr>
-    <th>Nom</th>
-    <th>Weburl</th>
-    <th>Desc</th>
-    <th>Mise service</th>
-    <th>Category</th>
-  </tr>
-
-<% @projets.each do |projet| %>
-  <tr>
-    <td><%=h projet.nom %></td>
-    <td><%=h projet.weburl %></td>
-    <td><%=h projet.desc %></td>
-    <td><%=h projet.mise_service %></td>
-    <td><%=h projet.category %></td>
-    <td><%= link_to 'Show', projet %></td>
-    <td><%= link_to 'Edit', edit_projet_path(projet) %></td>
-    <td><%= link_to 'Destroy', projet, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
-<% end %>
-</table>
-
-<br />
-
-<%= link_to 'New projet', new_projet_path %>
