@@ -2,16 +2,11 @@
     <div class="yui-b">
         <div class="yui-g">
             <h1>Contactez nous</h1>
-        </div>
-        
-        <div class="yui-g">
             <p>
-                Vous pouvez nous contacter : <br/>
-                    - par telephone au : 0690 91 17 48 <br/>
-                    - par email au : <%= mailto %>
+               <b>Remplissez le formulaire suivant, nous vous donnons l'assurance d'entrer très rapidement en contact.</b>
             </p>
         </div>
-        
+
         <div class="yui-g">
             <% form_for @prospect do |f| -%>
               <p>
@@ -39,8 +34,12 @@
                 <%= f.text_field :email %>
               </p>
               <p>
+                <%= f.label :interet, "Sujet" %><br/>
+                <%= f.select :interet, Prospect::CATEGORY %>
+              </p>
+              <p>
                 <%= f.label :Message, "Message" %><br/>
-                <%= f.text_area :message %>
+                <%= f.text_area :message, :rows => 10 %>
               </p>
               <p>
                 <%= submit_tag "Envoyer" %>
@@ -51,7 +50,26 @@
 </div>
 
 <div class="yui-b sidebar">
-    <div class="yui-g">
-        
+    <div class="yui-g b1c2">
+        <div id="boule-verte">
+            <%= image_tag("boule-verte.png", :size => "31x30") %>
+        </div>
+        <p>
+            <%= link_to "Voir nos Sites Modeles", "" %>
+        </p>
+    </div>
+    
+    <div class="yui-g b2c2">
+        <div id="boule-bleu">
+            <%= image_tag("boule-bleu.png", :size => "31x30") %>
+        </div>
+        <p><b>Coordonnées : </b></p>
+        <p>
+            <br/>
+                Tel : (+33) 0690 91 17 48 <br/>
+                Fax : (+33) 0590 00 00 00 <br/>
+                <%= mail_to("gillesmath@me.com", "Mon email", :encode => "hex") %><br/>
+                Ruelle Jeanne d'Arc<br/> 97180 Sainte-Anne<br/> Guadeloupe FWI
+        </p>
     </div>
 </div>

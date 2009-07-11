@@ -79,6 +79,10 @@ div #bd {
 	color: black;
 }
 
+#bd div.yui-g p {
+	margin-bottom: 10px;
+}
+
 #bd div.yui-g #boule-rouge {
 	display: block;
 	position: relative;
@@ -213,7 +217,6 @@ div.yui-g.b1c2 a {
 div.yui-b.sidebar div.yui-g.login {
 	margin-top: 15px;
 	text-align: center;
-	background-color: purple;
 	padding: 5px;
 	width: 95%;
 }
