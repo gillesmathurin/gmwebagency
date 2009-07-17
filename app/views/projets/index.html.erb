@@ -12,7 +12,7 @@
                 <div class="categorie">
                     <h2><%= cat_for_display(category) %></h2>
                     <table class="portfolio">
-                            <% projets.in_groups_of(3, false) do |projet| %>
+                            <% projets.in_groups_of(5, false) do |projet| %>
                             <tr>
                                 <% projet.each do |p| %>
                                 <td align="center">
