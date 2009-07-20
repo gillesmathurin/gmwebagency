@@ -245,6 +245,13 @@ div.yui-b.sidebar div.yui-g.login a {
 	margin-bottom: 15px;
 }
 
+#bd div.yui-g.accroche pre {
+	display: block;
+	margin-left: 470px;
+	font-style: italic;
+	font-size: 93%;
+}
+
 /* @end */
 
 #ft {
