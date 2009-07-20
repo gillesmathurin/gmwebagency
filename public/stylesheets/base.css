@@ -52,6 +52,8 @@ div #bd {
 	background-color: #f9fbfb;
 	border: 1px solid #e4e4e4;
 	padding: 20px;
+	height: auto;
+	min-height: 650px;
 }
 
 #bd div.accroche {
@@ -210,6 +212,14 @@ div.yui-g.b1c2 a {
 	border-style: none;
 }
 
+#bd div.yui-g div.categorie table.portfolio td a {
+	text-decoration: underline;
+	color: #ff612b;
+	font-style: italic;
+	font-weight: bold;
+	font-family: "Lucida Grande", Lucida, Verdana, sans-serif;
+}
+
 #bd form p {
 	margin-top: 5px;
 	margin-bottom: 5px;
@@ -231,11 +241,12 @@ div.yui-b.sidebar div.yui-g.login a {
 /* @end */
 
 #ft {
-	height: 33px;
+	height: auto;
 	display: block;
 	background-color: #007eee;
 	bottom: 0;
 	text-align: center;
 	color: white;
-	line-height: 33px;
+	line-height: 20px;
+	font-size: 93%;
 }

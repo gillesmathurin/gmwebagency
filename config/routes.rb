@@ -5,6 +5,7 @@ ActionController::Routing::Routes.draw do |map|
   map.si_cyberbus '/si_cyberbus', :controller => "home", :action => "cyberbus"
   map.portfolio '/portfolio', :controller => "projets", :action => "index"
   map.contact '/contacts', :controller => "home", :action => "contact"
+  map.societe '/societe', :controller => "home", :action => "societe"
 
   map.logout '/logout', :controller => 'sessions', :action => 'destroy'
 

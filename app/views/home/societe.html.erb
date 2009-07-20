@@ -1,0 +1,47 @@
+<div id="yui-main">
+    <div class="yui-b">
+        
+        <div class="yui-g accroche">
+            <div id="boule-orange">
+                <%= image_tag("Boule-orange.png") %>
+            </div>
+            <p>
+                Notre exigence de qualité, nous pousse sans cesse à nous améliorer. Nous mettons cette exigence à votre service en vous proposant les solutions les plus adaptées.
+            </p>
+        </div>
+        
+        <div class="yui-g btexte">
+            <h1>Qui sommes nous ?</h1>
+            
+            <h2>Gilles MATHURIN</h2>
+            
+            <p>
+                Titulaire d'un certificat en conduite de projet multimédia orienté Internet délivré par l'U.Q.U.A.M (Université du Québec A Montréal), d'un D.U.T et en formation pour obtenir le titre d'ingénieur informatique du CNAM. Je met ma passion à votre service. J'emploie les méthodologies de développement "agile", les plus récentes afin que la conduite de votre projet et la qualité du résultat final soient exemplaires
+            </p>
+            
+            <h2>Partenaires</h2>
+            
+            <p>
+                Disposant d'un réseau de partenaires confirmés dans les domaines du Réseau, de l'Hébergement et dans la maintenance informatique, les projets d'envergure auront également l'assurance d'être mené à bien.
+            </p>
+        </div>
+        
+    </div>
+</div>
+
+<div class="yui-b sidebar">
+    <div class="yui-g b1c2">
+        <div id="boule-verte">
+            <%= image_tag("boule-verte.png", :size => "31x30") %>
+        </div>
+        <p>
+            <%= link_to "Voir nos Sites Modeles", "" %>
+        </p>
+    </div>
+    
+    <div class="yui-g login">
+        <% if logged_in? %>
+            <%= link_to "Déconnexion", logout_path() %>
+        <% end %>
+    </div>
+</div>
