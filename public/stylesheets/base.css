@@ -238,6 +238,12 @@ div.yui-b.sidebar div.yui-g.login a {
 	display: block;
 }
 
+#bd div.yui-g p.photo img {
+	float: left;
+	display: block;
+	margin-right: 15px;
+}
+
 /* @end */
 
 #ft {
