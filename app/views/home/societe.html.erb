@@ -24,7 +24,7 @@
                 <%= image_tag("Gilles.jpg", :size => "104x140") %>
             </p>
             <p>
-                Titulaire d'un certificat en conduite de projet multimédia orienté Internet délivré par l'U.Q.U.A.M (Université du Québec à Montréal), d'un D.U.T et en formation pour obtenir le titre d'ingénieur informatique du CNAM. Ma passion à votre service.<br/><br/> J'emploie les méthodologies de développement "agile", les plus récentes afin que la conduite de votre projet et la qualité du résultat final soient exemplaires
+                Titulaire d'un certificat en conduite de projet multimédia orienté Internet délivré par l'U.Q.U.A.M (Université du Québec à Montréal) & INFOGUA, d'un D.U.T et en formation pour obtenir le titre d'ingénieur informatique du CNAM. Ma passion à votre service.<br/><br/> J'emploie les méthodologies de développement "agile", les plus récentes afin que la conduite de votre projet et la qualité du résultat final soient exemplaires
             </p>
          </div>
         
@@ -58,5 +58,19 @@
         <% if logged_in? %>
             <%= link_to "Déconnexion", logout_path() %>
         <% end %>
+    </div>
+    
+    <div class="yui-g b2c2">
+        <div id="boule-bleu">
+            <%= image_tag("boule-bleu.png", :size => "31x30") %>
+        </div>
+        <p><b>Coordonnées : </b></p>
+        <p>
+            <br/>
+                Tel : (+33) 0690 91 17 48 <br/>
+                Fax : (+33) 0590 00 00 00 <br/>
+                <%= mail_to("gillesmath@me.com", "Mon email", :encode => "hex") %><br/>
+                Ruelle Jeanne d'Arc<br/> 97180 Sainte-Anne<br/> Guadeloupe FWI
+        </p>
     </div>
 </div>

@@ -59,6 +59,12 @@
         </p>
     </div>
     
+    <div class="yui-g login">
+        <% if logged_in? %>
+            <%= link_to "Déconnexion", logout_path() %>
+        <% end %>
+    </div>
+    
     <div class="yui-g b2c2">
         <div id="boule-bleu">
             <%= image_tag("boule-bleu.png", :size => "31x30") %>
