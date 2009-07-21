@@ -51,5 +51,19 @@
             <%= link_to "Déconnexion", logout_path() %>
         <% end %>
     </div>
+    
+    <div class="yui-g b2c2">
+        <div id="boule-bleu">
+            <%= image_tag("boule-bleu.png", :size => "31x30") %>
+        </div>
+        <p><b>Coordonnées : </b></p>
+        <p>
+            <br/>
+                Tel : (+33) 0690 91 17 48 <br/>
+                Fax : (+33) 0590 00 00 00 <br/>
+                <%= mail_to("gillesmath@me.com", "Mon email", :encode => "hex") %><br/>
+                Ruelle Jeanne d'Arc<br/> 97180 Sainte-Anne<br/> Guadeloupe FWI
+        </p>
+    </div>
 </div>
 
