@@ -11,7 +11,7 @@
 	
 </head>
 
-<body onload="preloadImages();">
+<body>
     
     <div id="doc4" class="yui-t5">
         <div id="hd">
@@ -19,8 +19,10 @@
                 <%= image_tag("banniere_complete_02.jpg") %>
             </div>
             <div id="menu">
+                <div id="preload-image">                    
+                </div>
                 <ul>
-                    <li><%= link_to "Accueil", "/" %></li>
+                    <li><%= link_to "Accueil", "/", :mouseover =>"this.src='/images/bk_menuon.gif'" %></li>
                     <li><%= link_to "Services", services_path() %></li>
                     <li><%= link_to "Société", societe_path() %></li>
                     <li><%= link_to "Portfolio", projets_path() %></li>
