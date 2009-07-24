@@ -14,7 +14,7 @@ div #hd {
 	height: 161px;
 }
 
-#hd #menu div#preload-image {
+div#preload-image {
 	background-image: url(../images/bk_menuon.gif);
 background-repeat: no-repeat;
 background-position: -1000px -1000px;

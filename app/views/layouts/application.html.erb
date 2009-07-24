@@ -14,13 +14,13 @@
 <body>
     
     <div id="doc4" class="yui-t5">
+        <div id="preload-image">                    
+        </div>
         <div id="hd">
             <div id="hd_img">
                 <%= image_tag("banniere_complete_02.jpg") %>
             </div>
             <div id="menu">
-                <div id="preload-image">                    
-                </div>
                 <ul>
                     <li><%= link_to "Accueil", "/", :mouseover =>"this.src='/images/bk_menuon.gif'" %></li>
                     <li><%= link_to "Services", services_path() %></li>
