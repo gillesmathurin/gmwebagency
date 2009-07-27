@@ -7,5 +7,4 @@ class ContactMailer < ActionMailer::Base
     sent_on Time.now
     charset "iso-8859-1"
   end
-
 end

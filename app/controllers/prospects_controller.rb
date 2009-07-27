@@ -8,7 +8,7 @@ class ProspectsController < ApplicationController
     
     respond_to do |format|
       if @prospect.save!
-        ContactMailer.send_contact(@prospect)
+        ContactMailer.deliver_contact(@prospect)
         flash[:notice] = "Merci, nous entrerons prochainement en contact avec vous."
         format.html { redirect_to contacts_url() }
       else
