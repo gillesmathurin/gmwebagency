@@ -6,8 +6,15 @@
                <b>Remplissez le formulaire suivant, nous vous donnons l'assurance d'entrer très rapidement en contact.</b>
             </p>
         </div>
+        
+        <div class="yui-g">
+            <% unless flash[:notice].blank? %>
+    		<p class="flash-notice"><%= flash[:notice] %></p>
+    		<% end %>
+        </div>
 
         <div class="yui-g">
+            
             <% form_for @prospect do |f| -%>
               <p>
                 <%= f.label :nom, "Nom" %><br/>
