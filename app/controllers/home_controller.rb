@@ -1,4 +1,6 @@
 class HomeController < ApplicationController
+  cache_page :accueil, :services, :societe, :contact
+  
   # GET 'home/accueil'
   def accueil
     @projets = Projet.marked_for_mp
@@ -11,11 +13,7 @@ class HomeController < ApplicationController
   # GET '/societe'
   def societe
   end
-  
-  # GET '/contacts'
-  def contact
-  end
-  
+    
   # GET '/si_cyberbu'
   def cyberbus
     @projet = Projet.find_by_nom("cyberbus")
