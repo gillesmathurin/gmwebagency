@@ -1,5 +1,5 @@
 class HomeController < ApplicationController
-  cache_page :accueil, :services, :societe, :contact
+  caches_page :accueil, :services, :societe, :contact
   
   # GET 'home/accueil'
   def accueil
