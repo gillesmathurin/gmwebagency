@@ -1,5 +1,6 @@
 class ProjetsController < ApplicationController
   uses_tiny_mce :options => { :theme => 'simple' }
+  caches_page :index
   
   # GET /projets
   # GET /projets.xml
