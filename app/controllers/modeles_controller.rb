@@ -1,4 +1,6 @@
 class ModelesController < ApplicationController
+  uses_tiny_mce :options => {:theme => 'simple'}
+  
   # GET /modeles
   # GET /modeles.xml
   def index
