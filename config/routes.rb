@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :modeles
+
   map.resources :projets
   map.resources :prospects
   map.services '/services', :controller => "home", :action => "services"

@@ -1,5 +1,4 @@
 Net::SMTP.enable_tls(OpenSSL::SSL::VERIFY_NONE)
-# TODO : replace this when the domain name will be bought
 ActionMailer::Base.delivery_method = :smtp
 ActionMailer::Base.perform_deliveries = true
 ActionMailer::Base.raise_delivery_errors = true
