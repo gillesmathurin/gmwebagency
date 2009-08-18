@@ -12,19 +12,27 @@
         <div class="yui-g">
             <h1>Nos sites modèles</h1>
             
+            
+            <% if logged_in? %>
+                <p><%= link_to 'Nouveau Modèle', new_modele_path %></p>
+            <% end %>
+            
             <% @modeles.each do |modele| %>
                 <div class="modele">
-                    <p class="image-modele"><%= modele.picture.url(:thumb) %></p>
+                    <p class="image-modele"><%= image_tag(modele.picture.url(:thumb)) %></p>
                     <p class="modele-nom"><%= modele.nom %></p>
                     <%= modele.desc %>
                     <p class="modele-link">Voir Démo : <%= link_to modele.weburl, "#{modele.weburl}" %></p>
                 </div>
-            
+                
+                <% if logged_in? %>
+                <p>
+                    <%= link_to "Modifier", edit_modele_path(modele) %> | <%= link_to "Supprimer", modele_path(modele), :method => :delete, :confirm => "Certain de vous ?" %>
+                </p>
+                <% end %>
+                <hr>
             <% end %>
 
-            <% if logged_in? %>
-                <%= link_to 'Nouveau Modèle', new_modele_path %>
-            <% end %>
         </div>
     </div>
 </div>
