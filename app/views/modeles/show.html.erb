@@ -1,38 +1,28 @@
-<p>
-  <b>Nom:</b>
-  <%=h @modele.nom %>
-</p>
+<div id="yui-main">
+    <div class="yui-b">
+        <h1><%= @modele.nom %></h1>
+        
+        <div class="yui-g">
+            <p>
+              <b>Description:</b>
+            </p>
+            <%= @modele.desc %>
 
-<p>
-  <b>Desc:</b>
-  <%=h @modele.desc %>
-</p>
+            <p>
+              <b>Weburl:</b>
+              <%=h @modele.weburl %>
+            </p>
 
-<p>
-  <b>Weburl:</b>
-  <%=h @modele.weburl %>
-</p>
-
-<p>
-  <b>Picture filename:</b>
-  <%=h @modele.picture_filename %>
-</p>
-
-<p>
-  <b>Picture content type:</b>
-  <%=h @modele.picture_content_type %>
-</p>
-
-<p>
-  <b>Picture file size:</b>
-  <%=h @modele.picture_file_size %>
-</p>
-
-<p>
-  <b>Picture updated at:</b>
-  <%=h @modele.picture_updated_at %>
-</p>
+            <p>
+                <b>Prix:</b>
+                <%=h @modele.price %> € TTC
+            </p>
 
 
-<%= link_to 'Edit', edit_modele_path(@modele) %> |
-<%= link_to 'Back', modeles_path %>
+            <%= link_to 'Modifier', edit_modele_path(@modele) %> |
+            <%= link_to 'Retour', modeles_path %>
+        </div>
+    </div>
+</div>
+
+

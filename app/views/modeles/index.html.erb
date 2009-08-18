@@ -15,8 +15,9 @@
             <% @modeles.each do |modele| %>
                 <div class="modele">
                     <p class="image-modele"><%= modele.picture.url(:thumb) %></p>
+                    <p class="modele-nom"><%= modele.nom %></p>
                     <%= modele.desc %>
-                    <p class="modele-link"><%= link_to modele.weburl, "#{modele.weburl}" %></p>
+                    <p class="modele-link">Voir Démo : <%= link_to modele.weburl, "#{modele.weburl}" %></p>
                 </div>
             
             <% end %>
