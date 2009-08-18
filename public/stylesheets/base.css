@@ -272,6 +272,17 @@ div.yui-b.sidebar div.yui-g.login a {
 	font-size: 1.7em;
 }
 
+#bd div.yui-g>div.modele>p.modele-prix {
+	color: red;
+	background-color: #d7ecfa;
+	width: 25%;
+	text-align: center;
+	padding: 5px;
+	font-size: 1.5em;
+	font-weight: bold;
+	border: 1px double aqua;
+}
+
 #bd div.yui-g>div.modele>ul {
 	margin-left: 15px;
 	display: inline;
