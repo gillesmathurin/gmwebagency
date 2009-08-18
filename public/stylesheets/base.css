@@ -258,6 +258,35 @@ div.yui-b.sidebar div.yui-g.login a {
 	font-size: 93%;
 }
 
+#bd div.yui-g>div.modele>p.image-modele {
+	float: left;
+	display: inline-block;
+	margin-right: 15px;
+}
+
+#bd div.yui-g>div.modele>p.modele-nom {
+	font-weight: bold;
+	color: #81bcf7;
+	font-variant: small-caps;
+	font-size: 1.5em;
+}
+
+#bd div.yui-g>div.modele>ul {
+	margin-left: 15px;
+}
+
+#bd div.yui-g>div.modele>ul>li {
+	list-style-type: disc;
+	margin-left: 15px;
+}
+
+#bd div.yui-g>div.modele>p.modele-link {
+	font-size: 1.3em;
+	font-weight: bold;
+	font-style: italic;
+	color: #ff8908;
+}
+
 /* @end */
 
 #ft {
